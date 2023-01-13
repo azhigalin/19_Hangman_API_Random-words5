@@ -1,4 +1,5 @@
-let key = config.MY_KEY;
+import { config } from "./config.js";
+
 const wordE1 = document.getElementById("word"),
   wrongLettersE1 = document.getElementById("wrong-letters"),
   playAgainBtn = document.getElementById("play-button"),
@@ -14,7 +15,7 @@ const wrongLetters = [];
 const options = {
   method: "GET",
   headers: {
-    "X-RapidAPI-Key": key,
+    "X-RapidAPI-Key": config.MY_KEY,
     "X-RapidAPI-Host": "random-words5.p.rapidapi.com",
   },
 };
